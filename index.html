@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sneha Radhakrishnan | Futuristic Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',sans-serif; }
+    body { background:#0f0f15; color:#e5e7eb; scroll-behavior: smooth; overflow-x:hidden; }
+    a { text-decoration:none; }
+    header { min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; padding:40px; background:linear-gradient(135deg,#0f0f15,#1a1a2e); }
+    h1 { font-size:3.2rem; font-weight:700; margin-bottom:16px; background:linear-gradient(90deg,#60a5fa,#a78bfa); -webkit-background-clip:text; -webkit-text-fill-color:transparent; animation:glowText 2s ease-in-out infinite alternate; }
+    @keyframes glowText { 0% { text-shadow:0 0 8px #60a5fa,0 0 16px #a78bfa; } 100% { text-shadow:0 0 16px #60a5fa,0 0 32px #a78bfa; } }
+    h2 { font-size:1.1rem; font-weight:400; color:#93c5fd; margin-bottom:28px; letter-spacing:1px; }
+    p { max-width:760px; margin:auto; font-size:1.05rem; line-height:1.8; color:#d1d5db; }
+    .btn { display:inline-block; margin:18px 10px 0; padding:14px 36px; border-radius:999px; background:linear-gradient(135deg,#6366f1,#8b5cf6); color:white; font-weight:600; transition:all 0.3s ease; }
+    .btn.secondary { background:transparent; border:1px solid rgba(255,255,255,0.25); }
+    .btn:hover { transform:translateY(-3px); box-shadow:0 0 20px #8b5cf6,0 0 40px #6366f1; }
+    section { padding:80px 10%; }
+    .section-title { font-size:2rem; margin-bottom:36px; color:#f9fafb; text-align:center; position:relative; }
+    .section-title::after { content:''; width:80px; height:3px; background:#6366f1; display:block; margin:10px auto 0; border-radius:2px; }
+    .card { background:rgba(255,255,255,0.03); backdrop-filter:blur(14px); border-radius:22px; padding:36px; margin-bottom:30px; border:1px solid rgba(255,255,255,0.08); box-shadow:0 20px 50px rgba(0,0,0,0.4); opacity:0; transform:translateY(20px); transition:all 0.8s ease; cursor:pointer; }
+    .card.visible { opacity:1; transform:translateY(0); }
+    .card:hover { transform:scale(1.03); box-shadow:0 0 30px #8b5cf6,0 0 50px #6366f1; }
+    footer { text-align:center; padding:40px; font-size:0.9rem; color:#9ca3af; }
+
+    /* Typing effect for intro text */
+    .typing { border-right: .15em solid #6366f1; white-space: nowrap; overflow: hidden; animation: typing 3s steps(40, end) infinite, blink 0.7s step-end infinite; display:inline-block; }
+    @keyframes typing { from { width: 0 } to { width:100% } }
+    @keyframes blink { 50% { border-color: transparent } }
+
+    /* Smooth scroll for button */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div>
+    <h1>Sneha Radhakrishnan</h1>
+    <h2>Computer Science Undergraduate • Business & Startups</h2>
+    <p class="typing">
+      Learning by Doing • Observing • Understanding Businesses
+    </p>
+    <br>
+    <a href="#skills-languages" class="btn">Explore More</a>
+    <a href="Resume.PDF" class="btn secondary" download>Download Resume</a>
+  </div>
+</header>
+
+<!-- ABOUT ME -->
+<section id="about">
+  <h3 class="section-title">About Me</h3>
+  <div class="card">
+    <p>
+      I learn best by listening, observing, and understanding processes thoroughly. I take time
+      to grasp concepts properly, but once I do, I am consistent and reliable. I am deeply
+      interested in business operations, startups, and learning directly from people who have
+      built real systems.
+    </p>
+  </div>
+</section>
+
+<!-- LANGUAGES & SKILLS -->
+<section id="skills-languages">
+  <h3 class="section-title">Languages & Skills</h3>
+  <div class="card">
+    <p><strong>Languages I Speak:</strong><br>
+      Tamil – Native<br>
+      English – Full Professional<br>
+      Hindi – Working Proficiency
+    </p>
+    <p><strong>Skills & Strengths:</strong><br>
+      Listening • Observing • Learning by Doing • Understanding Business Operations • Curiosity
+    </p>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h3 class="section-title">Education</h3>
+
+  <div class="card">
+    <p><strong>B.E. Computer Science</strong><br>
+    BITS Pilani, Dubai Campus (Currently Pursuing)<br>
+    Location: Dubai, UAE</p>
+  </div>
+
+  <div class="card">
+    <p><strong>Class XII</strong><br>
+    Velammal Bodhi Campus, Trichy<br>
+    Board: CBSE • Stream: Bio-Maths, Physical Education<br>
+    Percentage: 94.3%<br>
+    Location: Trichy, India</p>
+  </div>
+
+  <div class="card">
+    <p><strong>Class X</strong><br>
+    Kamala Niketan Montessori School, Trichy<br>
+    Board: CBSE • Percentage: 88%<br>
+    Location: Trichy, India</p>
+  </div>
+</section>
+
+<!-- WHY I WANT TO LEARN -->
+<section id="why-business">
+  <h3 class="section-title">Why I Want to Learn From Your Business</h3>
+  <div class="card">
+    <p>
+      I want to learn how businesses operate beyond theory: how daily decisions are made,
+      how challenges are handled, and how teams execute under real-world constraints.
+      I seek exposure, guidance, and the opportunity to assist wherever needed, while
+      observing how experienced professionals think and operate.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h3 class="section-title">Contact</h3>
+  <div class="card">
+    <p>
+      📧 comfycaravantosuccess@gmail.com<br>
+      📍 Dubai, UAE<br><br>
+      Open to internships, shadowing, and learning-focused opportunities.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  Built with intent • © 2026 Sneha Radhakrishnan
+</footer>
+
+<!-- JAVASCRIPT FOR ANIMATIONS -->
+<script>
+  // Fade-in cards on scroll
+  const cards = document.querySelectorAll('.card');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.2 });
+  cards.forEach(card => observer.observe(card));
+</script>
+
+</body>
+</html>
